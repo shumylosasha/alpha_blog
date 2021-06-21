@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-center mt-4">
+    <div class="col-8">
+      <%= render 'shared/errors', obj:@user %>
+      <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">User name</label>
+            <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "User name" %>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Email" %>
+            <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Password" %>
+          </div>
+          <div class="row justify-content-center">
+            <%= f.submit "Sign up", class: "btn btn-outline-light col-2 mt-3" %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
