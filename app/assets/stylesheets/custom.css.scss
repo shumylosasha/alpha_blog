@@ -1,0 +1,32 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+
+html, body {
+  height: 100%;
+  background-color: lightgrey;
+}
+
+#logo {
+   float: left;
+   font-size: 1.7em;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   font-weight: bold;
+ }
+
+
+#home_top_block {
+  background-image: asset-url("home_bg.jpeg");
+  margin-top: 25px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
