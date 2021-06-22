@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
 	before_action :articles_params, only: [:show, :edit, :update, :destroy]
 
 	def show
+		
 	end
 
 	def index

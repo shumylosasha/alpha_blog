@@ -1,7 +1,5 @@
 class User < ApplicationRecord
-  # user must be present and unique, min3 max25
-  # email address must be present and unique, max 105
-  # email must be valid email format, check with email regex
+  before_save { self.email = email.downcase }
   has_many :articles
 
   validates :username, presence: true,
