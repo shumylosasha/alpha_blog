@@ -15,10 +15,22 @@ html, body {
    font-weight: bold;
  }
 
+ #page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
 
 #home_top_block {
   background-image: asset-url("home_bg.jpeg");
   margin-top: 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
 }
 
 .nav-link {

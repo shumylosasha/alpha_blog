@@ -13,4 +13,5 @@ module ApplicationHelper
 
     image_tag(image_src, alt: user.username, class: "rounded mx-auto d-block")
   end
+
 end
